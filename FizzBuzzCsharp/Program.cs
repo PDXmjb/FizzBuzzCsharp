@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FizzBuzzCsharp
 {
@@ -10,6 +6,14 @@ namespace FizzBuzzCsharp
     {
         static void Main(string[] args)
         {
+            for (int i = 1; i <= 100; i++)
+            {
+                var output = String.Empty;
+                output += i % 3 == 0 ? "Fizz" : "";
+                output += i % 5 == 0 ? "Buzz" : "";
+                Console.WriteLine(output == String.Empty ? i.ToString() : output);
+            }
+            Console.ReadKey();
         }
     }
 }
